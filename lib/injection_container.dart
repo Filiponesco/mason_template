@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter_base/app_config.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final sl = GetIt.instance;
@@ -23,7 +24,7 @@ abstract class Injector {
         ));
         dio
           ..options.headers = {"content-type": "application/json", "Accept": "application/json"}
-          ..interceptors.add(LogInterceptor(
+          ..interceptors.add(PrettyDioLogger(
             responseBody: true,
             requestBody: true,
             requestHeader: true,
