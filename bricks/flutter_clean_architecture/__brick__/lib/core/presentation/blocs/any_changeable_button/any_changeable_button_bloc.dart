@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:{{name}}/core/error/failures.dart';
+import 'package:{{project_name}}/core/error/failures.dart';
 
 part 'any_changeable_button_event.dart';
 part 'any_changeable_button_state.dart';

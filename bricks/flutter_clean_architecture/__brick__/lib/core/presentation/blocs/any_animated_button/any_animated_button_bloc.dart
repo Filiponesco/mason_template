@@ -3,7 +3,7 @@ import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:{{name}}/core/error/failures.dart';
+import 'package:{{project_name}}/core/error/failures.dart';
 
 part 'any_animated_button_event.dart';
 

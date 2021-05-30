@@ -1,7 +1,8 @@
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
-import 'package:{{name}}/injection_container.dart';
-import 'package:{{name}}/app_config.dart';
-import 'package:{{name}}/core/app/navigator.dart';
+import 'package:{{project_name}}/injection_container.dart';
+import 'package:{{project_name}}/app_config.dart';
+import 'package:{{project_name}}/core/navigator/navigator.dart';
 import 'generated/l10n.dart';
 
 void main() async {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      onGenerateRoute: CustomNavigator.router.generator,
+      onGenerateRoute: (routeSettings) => CustomNavigator.router.generator(routeSettings),
       navigatorKey: CustomNavigator.navigatorKey,
       localizationsDelegates: [S.delegate],
       supportedLocales: S.delegate.supportedLocales,
@@ -24,6 +25,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      navigatorObservers: [BotToastNavigatorObserver()],
+      builder: BotToastInit(),
       home: Scaffold(
         body: Container(),
       ),

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:{{name}}/generated/l10n.dart';
+import 'package:{{project_name}}/generated/l10n.dart';
 
 abstract class Failure extends Equatable {
   @override

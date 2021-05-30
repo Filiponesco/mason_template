@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:{{name}}/core/presentation/widgets/any_animated_button/models/any_animated_button_params.dart';
-import 'package:{{name}}/core/presentation/blocs/any_animated_button/any_animated_button_bloc.dart';
+import 'package:{{project_name}}/core/presentation/widgets/any_animated_button/models/any_animated_button_params.dart';
+import 'package:{{project_name}}/core/presentation/blocs/any_animated_button/any_animated_button_bloc.dart';
 
 class AnyAnimatedButton extends StatefulWidget {
   final AnyAnimatedButtonBloc bloc;

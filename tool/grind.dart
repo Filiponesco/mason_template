@@ -1,5 +1,11 @@
 import 'package:grinder/grinder.dart';
 
+/*
+apparently line
+    runOptions: RunOptions(runInShell: true),
+is required to work on Windows so i'll keep it
+*/
+
 void main(args) => grind(args);
 
 @Task('clean build model')

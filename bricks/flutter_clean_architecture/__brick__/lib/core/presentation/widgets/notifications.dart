@@ -1,10 +1,10 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
-import 'package:{{name}}/core/error/failures.dart';
-import 'package:{{name}}/core/style/colors.dart';
-import 'package:{{name}}/core/style/dimens.dart';
-import 'package:{{name}}/core/style/duration.dart';
-import 'package:{{name}}/core/style/text_styles.dart';
+import 'package:{{project_name}}/core/error/failures.dart';
+import 'package:{{project_name}}/core/style/colors.dart';
+import 'package:{{project_name}}/core/style/dimens.dart';
+import 'package:{{project_name}}/core/style/duration.dart';
+import 'package:{{project_name}}/core/style/text_styles.dart';
 
 void notification({required String description, Color backgroundColor = blackColor}) => BotToast.showNotification(
       title: (_) => Text(

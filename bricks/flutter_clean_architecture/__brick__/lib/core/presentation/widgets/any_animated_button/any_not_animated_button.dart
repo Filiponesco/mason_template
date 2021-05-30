@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:{{name}}/core/presentation/widgets/any_animated_button/models/any_animated_button_params.dart';
+import 'package:{{project_name}}/core/presentation/widgets/any_animated_button/models/any_animated_button_params.dart';
 
 class AnyNotAnimatedButton extends StatelessWidget {
   final AnyAnimatedButtonParams params;

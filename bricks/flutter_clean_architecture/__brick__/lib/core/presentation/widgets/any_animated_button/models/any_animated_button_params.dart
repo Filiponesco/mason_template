@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:{{name}}/core/style/colors.dart';
-import 'package:{{name}}/core/style/dimens.dart';
-import 'package:{{name}}/core/presentation/widgets/any_animated_button/any_animated_button_error.dart';
-import 'package:{{name}}/core/presentation/widgets/any_animated_button/any_animated_button_progress.dart';
-import 'package:{{name}}/core/presentation/widgets/any_animated_button/any_animated_button_success.dart';
+import 'package:{{project_name}}/core/style/colors.dart';
+import 'package:{{project_name}}/core/style/dimens.dart';
+import 'package:{{project_name}}/core/presentation/widgets/any_animated_button/any_animated_button_error.dart';
+import 'package:{{project_name}}/core/presentation/widgets/any_animated_button/any_animated_button_progress.dart';
+import 'package:{{project_name}}/core/presentation/widgets/any_animated_button/any_animated_button_success.dart';
 
 class AnyAnimatedButtonParams {
   static double _size = buttonHeight;
