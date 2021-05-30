@@ -2,16 +2,13 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:{{name}}/app_config.dart';
-import 'package:{{name}}/features/new_feature/injection_container.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final sl = GetIt.instance;
 
 const globalDio = 'global';
 
-class InjectionContainer extends Injector
-    with
-        NewFeatureInjector {}
+class InjectionContainer extends Injector {}
 
 abstract class Injector {
   @mustCallSuper
