@@ -358,3 +358,5 @@ build_log.txt
 # End of https://www.toptal.com/developers/gitignore/api/flutter,kotlin,xcode,androidstudio,swift,firebase,dart
 
 **.g.dart
+
+android/key.properties
